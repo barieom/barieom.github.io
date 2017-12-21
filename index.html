@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>Barry Eom Website</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -15,13 +15,78 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 #main {margin-left: 120px}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 30%;
+    left: 50%;
+    margin-left: -60px;
+    
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 30%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
 </style>
 <body class="w3-black">
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
-  <img src="/w3images/avatar_smoke.jpg" style="width:100%">
+  <img src="images/linked_in_bw.png" style="width:100%">
   <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
     <i class="fa fa-home w3-xxlarge"></i>
     <p>HOME</p>
@@ -30,9 +95,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <i class="fa fa-user w3-xxlarge"></i>
     <p>ABOUT</p>
   </a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+  <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-eye w3-xxlarge"></i>
-    <p>PHOTOS</p>
+    <p>PROJECTS</p>
   </a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-envelope w3-xxlarge"></i>
@@ -45,7 +110,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
     <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
     <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#projects" class="w3-bar-item w3-button" style="width:25% !important">PROJECTS</a>
     <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
   </div>
 </div>
@@ -55,125 +120,112 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
     <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Barry Eom </h1>
-    <p>Consulting Project Manager | Researcher | Volunteer</p>
-    <img src="/images/linked_in.jpg" alt="me!" class="image" width="992" height="1108">
+    <p>Consultant | Leader | Researcher | Volunteer</p>
+    <img src="images/linked_in_bw.png" alt="me!" class="image" width="270" height="400">
   </header>
 
   <!-- About Section -->
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">　Barry Eom | 엄벼리 | 	嚴 ビョリ　</h2>
+    <h2 class="w3-text-light-grey">Barry Eom </h2>
     <hr style="width:200px" class="w3-opacity">
+    <p>엄벼리 | 嚴 ビョリ</p>
     <p>I am a student at Tufts University with curiosity to learn and strong passion in making a difference in the world. Whether it be by directly helping someone in need or tackling grievous issues like homelessness in my community, I have always cherished the fact that anyone could be of positive influence, even if small, to the world. <br>
 	Majoring in computer science and cognitive and brain sciences, I am invested in the varying impact major tech companies, as well as tech startups, have on society, as they function as the main facilitator of innovation and are currently one of the biggest drivers of change in the world; in particular, I am interested in machine learning/AI and AR industry. <br>
 	Currently, I am working on publishing a paper about my findings on Variance Time Course Analysis and mind wandering. Additionally, I work as a consulting project manager representing the TAMID Group for CureFacts, as well as leading weekly education seminars on varying consulting topics. I am also part of Jumbo Code, a pro-bono tech development group on campus. <br>
-	From the implications of Absurdism and the meaning of life to the recent emergence of Tottenham Hotspurs and fantasy football, I enjoy talking about a lot of things. If you would like to reach out, feel free to contact me at: b.eom[at]tufts.edu.
+	From the implications of Absurdism and the meaning of life to the recent emergence of Tottenham Hotspurs and fantasy football, I enjoy talking about a lot of things. If you would like to reach out, feel free to contact me at: b.eom[at]tufts.edu. (Change [at] to @)
     </p>
-    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
-    <p class="w3-wide">Photography</p>
+    <h3 class="w3-padding-16 w3-text-light-grey">Skills and Background</h3>
+    <p class="w3-wide">Programming</p>
     <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+      <div class="w3-dark-grey" style="height:28px;width:65%"></div>
     </div>
-    <p class="w3-wide">Web Design</p>
+    <p>Languages: C, C++, MATLAB, Python, Java, HTML/Javascript/CSS <br>
+    	I started learning C++, my first 'comp sci' language, at the beginning of freshman year. Since then, I've picked up half a dozen languages and continue to find different problems to solve with my added skills. I've worked on several side projects - more detail can be found below. 
+   
+    <p class="w3-wide">Consulting</p>
     <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+      <div class="w3-dark-grey" style="height:28px;width:75%"></div>
     </div>
-    <p class="w3-wide">Photoshop</p>
+    <p>I always thought I was going into academia; however, after much exposure to research in academia, I realized I wanted something more. I tried consulting, without knowing what it really was, but fell in love with the dynamic and meaningful project based research work done in the consulting field. Since then, I've taken bigger roles and a leader in consulting for the TAMID Group.
+
+    <p class="w3-wide">Leadership</p>
     <div class="w3-white">
       <div class="w3-dark-grey" style="height:28px;width:80%"></div>
-    </div><br>
-    
-    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">11+</span><br>
-        Partners
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">55+</span><br>
-        Projects Done
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">89+</span><br>
-        Happy Clients
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">150+</span><br>
-        Meetings
-      </div>
     </div>
+    <p>I'm a leader. From founding and directing a fundraising event that has raised over $15,000 to being in charge of an on-campus group with more than 1200 members, I have the vision, passion, and integrity of a leader. As I believe that good leadership is founded upon the empowerment and motivation of a team/group, I try my best to connect to everyone and spark more ambition from them.
 
+    <p class="w3-wide">Cognitive Sciences Research</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div>
+    <p>Ever since reading masterpieces by Oliver Sacks, I have always been fascinated by the brain. My initial motivation for going into computer science was to give myself the necessary tools to research the brain. Although my life has taken a different path, my interest in cognition is still here. My most recent research has been on mind wandering, and I hope to continue doing research on the brain as a side project.</p>
+    <p class="w3-wide">Other Skills</p>
+    <p>I am fluent in Korean and Japanese (and... English!). In addition to being trilingual, I am a good public speaker, as I lead weekly sessions on the cornerstones of consulting and Harvard Business Review Cases for Tufts University students interested in doing consulting (I love teaching). I also love data analysis and am a huge sports - soccer, baseball, football - statistics nerd. </p>
+    <br>
     <button class="w3-button w3-light-grey w3-padding-large w3-section">
-      <i class="fa fa-download"></i> Download Resume
+      <a href="/Users/Barry/Documents/GitHub/barieom.github.io/supplemental_material/BarryEom_Resume.pdf">
+      <i class="fa fa-download">
+      </i> Download Resume
+      </a>
     </button>
-    
-    <!-- Grid for pricing tables -->
-    <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half w3-margin-bottom">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
-          <li class="w3-padding-16">Web Design</li>
-          <li class="w3-padding-16">Photography</li>
-          <li class="w3-padding-16">5GB Storage</li>
-          <li class="w3-padding-16">Mail Support</li>
-          <li class="w3-padding-16">
-            <h2>$ 10</h2>
-            <span class="w3-opacity">per month</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-          </li>
-        </ul>
-      </div>
-
-      <div class="w3-half">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
-          <li class="w3-padding-16">Web Design</li>
-          <li class="w3-padding-16">Photography</li>
-          <li class="w3-padding-16">50GB Storage</li>
-          <li class="w3-padding-16">Endless Support</li>
-          <li class="w3-padding-16">
-            <h2>$ 25</h2>
-            <span class="w3-opacity">per month</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-          </li>
-        </ul>
-      </div>
-    <!-- End Grid/Pricing tables -->
-    </div>
     
     <!-- Testimonials -->
     <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>  
-    <img src="/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
-    <p>Jane Doe saved us from a web disaster.</p><br>
+    <p><span class="w3-large w3-margin-right">Ari Manor.</span> CEO of CureFacts</p>
+    <p>to be added</p>
+
+    <p><span class="w3-large w3-margin-right">Isaac Herman.</span> Founder of Tufts TAMID Group</p>
+    <p>to be added</p>
+
+    <p><span class="w3-large w3-margin-right">Jim Brown.</span> Lead Counselor at Belmont High School</p>
+    <p>"Barry... has developed outstanding analytical and critical thinking skills [and] stays busy... I can't say enough about this considerate and optimistic young man."</p><br>
     
-    <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
-    <p>No one is better than Jane Doe.</p>
+    <p><span class="w3-large w3-margin-right">Joao Rodrigues.</span> Postdoctoral Researcher at Harvard University</p>
+    <p>"I noticed Barry's excitement about science, confident attitude and willingness to learn. Barry gather an important set of preliminary evidences that support a new hypothesis that may help solving a long-pursued problem in our research group. I am glad I had the opportunity to meet and work with Barry."</p>
+
+
+    <!-- </div> -->
   <!-- End About Section -->
   </div>
   
   <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="photos">
-    <h2 class="w3-text-light-grey">My Photos</h2>
+  <div class="w3-padding-64 w3-content" id="projects">
+    <h2 class="w3-text-light-grey">Programming Projects</h2>
     <hr style="width:200px" class="w3-opacity">
 
-    <!-- Grid for photos -->
+    <!-- Grid for projects -->
     <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
-        <img src="/w3images/wedding.jpg" style="width:100%">
-        <img src="/w3images/rocks.jpg" style="width:100%">
-        <img src="/w3images/sailboat.jpg" style="width:100%">
+    <h3 class="w3-text-light-grey">Technical Projects</h3>
+      <div class="row">
+      <div class="column">
+      	<div class="tooltip">
+      	<a href = "https://itunes.apple.com/us/app/punto-urban-art-museum/id1320710363?mt=8">
+        <img src="images/PUAM.jpg" style="width:100%">
+        <span class="tooltiptext">Punto Urban Art Museum iPhone Application</span></a>
+    	</div>
+    	
+    	<div class="tooltip">
+      	<a href = "github.com/barieom">
+        <img src="images/arith.jpg" style="width:100%">
+        <span class="tooltiptext">Image Compression Program written in C</span></a>
+    	</div>
       </div>
+      <div class="column">
+		<div class="tooltip">
+      	<a href = "github.com/barieom">
+        <img src="images/CatsAndDogs.jpg"  style="width:100%">
+        <span class="tooltiptext">It's Raining Cats and Dogs: A Head movement based game</span></a>
+    	</div>
+    	<div class="tooltip">
+      	<a href = "github.com/barieom">
+        <img src="images/GoT.jpg"  style="width:100%">
+        <span class="tooltiptext">Game of Thrones Interactive Game</span></a>
+    	</div>
+         </div>
+      </div>
+      <div class="w3-row-padding" style="margin:0 -16px">
+      <h3 class="w3-text-light-grey">Projects and Research</h3>
 
-      <div class="w3-half">
-        <img src="/w3images/underwater.jpg" style="width:100%">
-        <img src="/w3images/chef.jpg" style="width:100%">
-        <img src="/w3images/wedding.jpg" style="width:100%">
-        <img src="/w3images/p6.jpg" style="width:100%">
       </div>
     <!-- End photo grid -->
     </div>
@@ -186,9 +238,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <hr style="width:200px" class="w3-opacity">
 
     <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Greater Boston Area, US</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: 6one7 9three2 9eight7five</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: b.eom[at]tufts.edu</p>
     </div><br>
     <p>Lets get in touch. Send me a message:</p>
 
@@ -214,7 +266,6 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <i class="fa fa-pinterest-p w3-hover-opacity"></i>
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
   <!-- End footer -->
   </footer>
 
