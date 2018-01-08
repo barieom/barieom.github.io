@@ -32,6 +32,7 @@ html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
 .top,.bottom{position:fixed;width:100%;z-index:1}.top{top:0}.bottom{bottom:0}
 .wide{letter-spacing:4px}
 .margin-left{margin-left:16px!important}.push-left{margin-left:0px!important}.margin-right{margin-right:16px!important}.paragraph-shift{margin-left:40px!important}
+.margin-pics{margin-left:24px!important}
 
 /* font size and color*/
 html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
@@ -83,7 +84,7 @@ h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin
 .row { display: flex; flex-wrap: wrap; padding: 0 4px;}
 
 /* Create four equal columns that sits next to each other */
-.column { flex: 25%; max-width: 30%; padding: 0 6px;} 
+.column { flex: 25%; max-width: 35%; padding: 0 10px;} 
 .column img { margin-top:8px; vertical-align: middle;}
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media (max-width: 800px) { .column {flex: 50%; max-width: 50%;}}
