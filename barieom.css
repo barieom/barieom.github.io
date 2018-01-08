@@ -24,6 +24,7 @@ html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
 .padding-rec{padding-bottom:12px!important}
 .content{max-width:940px;margin:auto}.rest{overflow:hidden}
 .section,.code{margin-top:16px!important;margin-bottom:16px!important}
+.image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
 
 
 /* alignment */
@@ -40,8 +41,9 @@ h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin
 .xlarge{font-size:24px!important}.xxlarge{font-size:36px!important}.xxxlarge{font-size:48px!important}.jumbo{font-size:64px!important}
 .jumbo{font-size:64px!important}
 .text-grey,.hover-text-grey:hover,.text-gray,.hover-text-gray:hover{color:#757575!important}
+.text-white,.hover-text-white:hover{color:#fff!important}
 .light-grey,.hover-light-grey:hover,.light-gray,.hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
-.white,.hover-white:hover{color:#000!important;background-color:#fff!important}
+.white,.hover-white:hover{color:#000!important;background-color:#000!important}
 .dark-grey,.hover-dark-grey:hover,.dark-gray,.hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}
 
 /* bar drawing setters */
