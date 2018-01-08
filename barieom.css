@@ -26,13 +26,15 @@ html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
 .section,.code{margin-top:16px!important;margin-bottom:16px!important}
 .image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
 
+/* hover sidebar */
+.ul.nav-pills{top:20px; position:fixed;}
 
 /* alignment */
 .left-align{text-align:left!important}.right-align{text-align:right!important}.justify{text-align:justify!important}.center{text-align:center!important}
 .top,.bottom{position:fixed;width:100%;z-index:1}.top{top:0}.bottom{bottom:0}
 .wide{letter-spacing:4px}
 .margin-left{margin-left:16px!important}.push-left{margin-left:0px!important}.margin-right{margin-right:16px!important}.paragraph-shift{margin-left:40px!important}
-.margin-pics{margin-left:24px!important}
+.margin-pics{margin-left:24px!important}.role-shift{margin-right:60px!important}
 
 /* font size and color*/
 html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
@@ -43,9 +45,11 @@ h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin
 .jumbo{font-size:64px!important}
 .text-grey,.hover-text-grey:hover,.text-gray,.hover-text-gray:hover{color:#757575!important}
 .text-white,.hover-text-white:hover{color:#fff!important}
+.text-black,.hover-text-black:hover{color:#000!important}
 .light-grey,.hover-light-grey:hover,.light-gray,.hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
 .white,.hover-white:hover{color:#000!important;background-color:#000!important}
 .dark-grey,.hover-dark-grey:hover,.dark-gray,.hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}
+.dark-green,.hover-dark-green:hover,.dark-green,.hover-dark-green:hover{color:#0ff!important;background-color:#002000!important}
 
 /* bar drawing setters */
 .bar .bar-item{padding:8px 16px;float:left;width:auto;border:none;outline:none;display:block}
@@ -69,24 +73,27 @@ h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin
 
 
 /* hiding the good stuff */
-/*.hide-small{display:none!important}.mobile{display:block;width:100%!important}.bar-item.mobile,.dropdown-hover.mobile,.dropdown-click.mobile{text-align:center}
+.hide{display:none!important}.show-block,.show{display:block!important}.show-inline-block{display:inline-block!important}
+@media (max-width:600px){.modal-content{margin:0 10px;width:auto!important}.modal{padding-top:30px}
+.dropdown-hover.mobile .dropdown-content,.dropdown-click.mobile .dropdown-content{position:relative}	
+.hide-small{display:none!important}.mobile{display:block;width:100%!important}.bar-item.mobile,.dropdown-hover.mobile,.dropdown-click.mobile{text-align:center}
+.dropdown-hover.mobile,.dropdown-hover.mobile .btn,.dropdown-hover.mobile .button,.dropdown-click.mobile,.dropdown-click.mobile .btn,.dropdown-click.mobile .button{width:100%}}
 @media (min-width:993px){.modal-content{width:900px}.hide-large{display:none!important}.sidebar.collapse{display:block!important}}
 @media (max-width:992px) and (min-width:601px){.whide-medium{display:none!important}}
-*/
-
+/*.dropdown-hover.mobile,.dropdown-hover.mobile .btn,.dropdown-hover.mobile .button,.dropdown-click.mobile,.dropdown-click.mobile .btn,.dropdown-click.mobile .button{width:100%}}*/
 
 /* For hovering */
-.tooltip {position: relative; display:inline-block; border-bottom: 1px dotted black;} 
-.tooltip .tooltiptext {visibility: hidden; width: 120px; background-color: black; color: #fff; text-align: center; border-radius: 6px; padding: 5px 0; position: absolute; z-index: 1; bottom: 30%; left: 50%; margin-left: -60px;
-    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+.tooltip-mine {position: relative; display:inline-block; border-bottom: 1px dotted black;} 
+.tooltip-mine .tooltip-minetext {visibility: hidden; width: 120px; background-color: black; color: #fff; text-align: center; border-radius: 6px; padding: 5px 0; position: absolute; z-index: 1; bottom: 30%; left: 50%; margin-left: -60px;
+    /* Fade in tooltip-mine - takes 1 second to go from 0% to 100% opac: */
     opacity: 0; transition: opacity 1s;} 
-.tooltip:hover .tooltiptext {visibility:visible;opacity: 1;} 
-.row { display: flex; flex-wrap: wrap; padding: 0 4px;}
+.tooltip-mine:hover .tooltip-minetext {visibility:visible;opacity: 1;} 
+.row-pics { display: flex; flex-wrap: wrap; padding: 0 4px;}
 
 /* Create four equal columns that sits next to each other */
-.column { flex: 25%; max-width: 35%; padding: 0 10px;} 
-.column img { margin-top:8px; vertical-align: middle;}
+.column-pics { flex: 25%; max-width: 35%; padding: 0 10px;} 
+.column-pics img { margin-top:8px!important; vertical-align: middle!important;}
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media (max-width: 800px) { .column {flex: 50%; max-width: 50%;}}
+@media (max-width: 800px) { .column-pics {flex: 50%; max-width: 50%;}}
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) { .column { flex: 100%; max-width: 100%;}}
+@media (max-width: 600px) { .column-pics { flex: 100%; max-width: 100%;}}
