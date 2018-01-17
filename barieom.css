@@ -27,7 +27,7 @@ html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
 .image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
 
 /* hover sidebar */
-.ul.nav-pills{top:20px; position:fixed;}
+.ul.nav-pills{top:50px; position:sticky;}
 
 /* alignment */
 .left-align{text-align:left!important}.right-align{text-align:right!important}.justify{text-align:justify!important}.center{text-align:center!important}
