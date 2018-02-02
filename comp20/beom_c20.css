@@ -1,0 +1,11 @@
+html{box-sizing:border-box}*
+
+/*.black_back{color:#fff!important;background-color:#000!important}*/
+.back_black,.hover_black:hover{color:#fff!important;background-color:#292929!important}
+.padding-large{padding:12px 24px!important}
+.container,.panel{padding:0.01em 16px}
+.center{text-align:center!important}.justify{text-align:justify!important}
+.content{max-width:940px;margin:auto}.rest{overflow:hidden}
+.text-grey,.hover-text-grey:hover{color:#F0F0F0!important}
+
+.jumbo{font-size:64px!important}
