@@ -4,8 +4,17 @@ html{box-sizing:border-box}*
 .back_black,.hover_black:hover{color:#fff!important;background-color:#292929!important}
 .padding-large{padding:12px 24px!important}
 .container,.panel{padding:0.01em 16px}
-.center{text-align:center!important}.justify{text-align:justify!important}
+.center{text-align:center!important}
+
+/* text related */
+.justify{text-align:justify!important}
 .content{max-width:940px;margin:auto}.rest{overflow:hidden}
 .text-grey,.hover-text-grey:hover{color:#F0F0F0!important}
-
 .jumbo{font-size:64px!important}
+
+
+nav {text-align:center;list-style-type: none; overflow: hidden;border: 1px solid #e7e7e7;background-color: #f9f9f9;padding: 0;margin:0;}
+nav li {float:left;}
+nav a {display: block;color: #000;text-align: center;padding: 10px 20px;text-decoration: none;}
+nav a:hover:not(.active) {background-color: #ddd;}
+nav a.active {color: white;background-color: #333;}
