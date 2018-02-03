@@ -1,5 +1,5 @@
 html{box-sizing:border-box}*
-
+body, h1,h2,h3,h4,h5,h6{font-family: "Montserrat", sans-serif}
 /*.black_back{color:#fff!important;background-color:#000!important}*/
 .back_black,.hover_black:hover{color:#fff!important;background-color:#292929!important}
 .padding-large{padding:12px 24px!important}
@@ -11,7 +11,11 @@ html{box-sizing:border-box}*
 .content{max-width:940px;margin:auto}.rest{overflow:hidden}
 .text-grey,.hover-text-grey:hover{color:#F0F0F0!important}
 .jumbo{font-size:64px!important}
+.opacity,.hover-opacity:hover{opacity:0.60}
 
+p.light {
+    font-weight: lighter;
+}
 
 nav {text-align:center;list-style-type: none; overflow: hidden;border: 1px solid #e7e7e7;background-color: #f9f9f9;padding: 0;margin:0;}
 nav li {float:left;}
