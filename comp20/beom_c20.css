@@ -9,13 +9,18 @@ body, h1,h2,h3,h4,h5,h6{font-family: "Montserrat", sans-serif}
 /* text related */
 .justify{text-align:justify!important}
 .content{max-width:940px;margin:auto}.rest{overflow:hidden}
+.contentcontainer{
+    padding-right: 30px;
+    padding-left: 80px;}
 .text-grey,.hover-text-grey:hover{color:#F0F0F0!important}
-.jumbo{font-size:64px!important}
+.jumbo{font-size:64px!important}.small{font-size:13px;}
 .opacity,.hover-opacity:hover{opacity:0.60}
 
-p.light {
-    font-weight: lighter;
-}
+.light{font-weight: lighter;}
+.lefta{float: left; text-align:left;}
+.alignend{clear: both;}
+.righta {float: right; text-align:right;}
+.padding-4{padding-top:4px!important;padding-bottom:4px!important}
 
 nav {text-align:center;list-style-type: none; overflow: hidden;border: 1px solid #e7e7e7;background-color: #f9f9f9;padding: 0;margin:0;}
 nav li {float:left;}
