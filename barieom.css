@@ -81,13 +81,13 @@ h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin
 
 
 /* gallery */
-div.gallery {margin: 5px;border: 1px solid #ccc;float: left;width: 180px;}
-div.gallery:hover {border: 1px solid #777;}
-div.gallery img {width: 100%; height: auto;}
+div.gallery {margin: 0 0px;border: 1px solid #777;float: left;width: 300px;}
+div.gallery:hover {border: 1px solid #ccc; border-color: #999;}
+div.gallery img {width: 100%; height: auto; margin:0px;}
 div.desc {padding: 15px; text-align: center;}
 
 
-/* hiding the good stuff */
+/* hiding the good stuff 
 .hide{display:none!important}.show-block,.show{display:block!important}.show-inline-block{display:inline-block!important}
 @media (max-width:600px){.modal-content{margin:0 10px;width:auto!important}.modal{padding-top:30px}
 .dropdown-hover.mobile .dropdown-content,.dropdown-click.mobile .dropdown-content{position:relative}	
@@ -103,11 +103,11 @@ div.desc {padding: 15px; text-align: center;}
     /* Fade in tooltip-mine - takes 1 second to go from 0% to 100% opac: */
     opacity: 0; transition: opacity 1s;} 
 .tooltip-mine:hover .tooltip-minetext {visibility:visible;opacity: 1;} 
-.row-pics { display: flex; flex-wrap: wrap; padding: 0 4px;}
+.row-pics { display: flex; flex-wrap: wrap; padding: 0 0px;}
 
 /* Create four equal columns that sits next to each other */
-.column-pics { flex: 25%; max-width: 35%; padding: 0 10px;} 
-.column-pics img { margin-top:8px!important; vertical-align: middle!important;}
+.column-pics { flex: 25%; max-width: 35%; padding: 0 10px; /*border:.3px solid #ccc;*/} 
+.column-pics img { margin-top:0px!important; vertical-align: middle!important;}
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media (max-width: 800px) { .column-pics {flex: 50%; max-width: 50%;}}
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
