@@ -12,7 +12,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 
 /* For color */
-.back_black,.hover_black:hover{color:#fff!important;background-color:#191919!important}
+.back_black,.hover_black:hover{color:#fff!important;background-color:#151515!important}.background_text{color:#151515;}
 .sidebar{height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto;margin:0;padding:0}.active{background-color:#FFFFFF;color:#ffffff}
 @media (min-width:993px){.modal-content{width:900px}.hide-large{display:none!important}.sidebar.collapse{display:block!important}}
 @media (max-width:992px){.sidebar.collapse{display:none}.main{margin-left:0!important;margin-right:0!important}}
@@ -53,12 +53,13 @@ h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin
 .xlarge{font-size:24px!important}.xxlarge{font-size:36px!important}.xxxlarge{font-size:48px!important}.jumbo{font-size:64px!important}
 .jumbo{font-size:64px!important}
 .text-grey,.hover-text-grey:hover,.text-gray,.hover-text-gray:hover{color:#757575!important}
+.text-dark-white,.hover-text-dark-white:hover{color:#dfdfdf;}
 .text-white,.hover-text-white:hover{color:#fff!important}
 .text-black,.hover-text-black:hover{color:#000!important}
 .light-grey,.hover-light-grey:hover,.light-gray,.hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
 .white,.hover-white:hover{color:#000!important;background-color:#000!important}
 .dark-grey,.hover-dark-grey:hover,.dark-gray,.hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}
-.dark-green,.hover-dark-green:hover,.dark-green,.hover-dark-green:hover{color:#0ff!important;background-color:#002000!important}
+.dark-green,.hover-dark-green:hover,.dark-green,.hover-dark-green:hover{color:#fff!important;background-color:#002040!important}
 
 /* bar drawing setters */
 .bar .bar-item{padding:8px 16px;float:left;width:auto;border:none;outline:none;display:block}
