@@ -2,7 +2,11 @@ html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 /*no padding!*/
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
 
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif,-moz-transition: 
+		border-color 0.2s ease-in-out;
+		-webkit-transition: border-color 0.2s ease-in-out;
+		-ms-transition: border-color 0.2s ease-in-out;
+		transition: border-color 0.2s ease-in-out;}
 .row-padding img {margin-bottom: 12px}
 .sidebar {width: 120px;background: #222;}
 /* left margin to accomodate for the sidebar */
@@ -12,7 +16,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 
 /* For color */
-.back_black,.hover_black:hover{color:#fff!important;background-color:#151515!important}.background_text{color:#151515;}
+.back_black,.hover_black:hover{color:#fff!important;background-color:#1f1f1f!important}.background_text{color:#151515;}
 .sidebar{height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto;margin:0;padding:0}.active{background-color:#FFFFFF;color:#ffffff}
 @media (min-width:993px){.modal-content{width:900px}.hide-large{display:none!important}.sidebar.collapse{display:block!important}}
 @media (max-width:992px){.sidebar.collapse{display:none}.main{margin-left:0!important;margin-right:0!important}}
@@ -30,10 +34,12 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .padding-64{padding-top:64px!important;padding-bottom:64px!important}
 .padding-24{padding-top:24px!important;padding-bottom:24px!important}
 .padding-16{padding-top:16px!important;padding-bottom:16px!important}
+.padding-bottom{padding-bottom:242px!important;}
 .padding-rec{padding-bottom:12px!important}
 .content{max-width:940px;margin:auto}.rest{overflow:hidden}
 .section,.code{margin-top:16px!important;margin-bottom:16px!important}
 .image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
+.bg1{background-color: #707070}.bg2{background-color: #505050}.bg3{background-color: #404040}.bg4{background-color: #303030}.bg5{background-color: #282828}.bg6{background-color: #181818}.bg7{background-color: #0f0f0f}.bg8{background-color: #080808}
 
 /* hover sidebar */
 .ul.nav-pills{top:50px; position:sticky;background-color:#000000; color:#000000;}
