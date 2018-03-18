@@ -16,7 +16,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif,-moz-transition:
 
 
 /* For color */
-.back_black,.hover_black:hover{color:#fff!important;background-color:#1f1f1f!important}.background_text{color:#151515;}
+.back_black,.hover_black:hover{color:#fff!important;background-color:#1f1f1f!important}.background_text{color:#1f1f1f;}
 .sidebar{height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto;margin:0;padding:0}.active{background-color:#FFFFFF;color:#ffffff}
 @media (min-width:993px){.modal-content{width:900px}.hide-large{display:none!important}.sidebar.collapse{display:block!important}}
 @media (max-width:992px){.sidebar.collapse{display:none}.main{margin-left:0!important;margin-right:0!important}}

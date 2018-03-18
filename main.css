@@ -92,7 +92,7 @@
 
 	a:hover {
 			border-color: transparent;
-			color: #003366 ;
+			color: #B0B0FF;
 
 	}
 
@@ -222,7 +222,7 @@
 		transform: translate3d(0,0,0);
 	/* Set your background with this */
 
-		background: #348cb2 url(images/calvinhobbes.png) bottom left/*url("images/me.jpg")*/;
+		background: #4D6FAC url(images/calvinhobbes.png) bottom left/*url("images/me.jpg")*/;
 		background-repeat:repeat-x;
 		/*background-size:cover;*/
 		height: 100%;
