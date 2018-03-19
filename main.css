@@ -12,6 +12,13 @@
 		vertical-align: baseline;
 	}
 
+	svg {
+		display: block;
+		width: 100%;
+		height: 100%;
+		background: yellow;
+	}
+
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
