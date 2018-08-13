@@ -3,12 +3,12 @@ html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
 
 body, h1,h2,h3,h4,h5,h6 {
-		font-family: "Montserrat", 
-		sans-serif,-moz-transition: 
-		border-color 0.2s ease-in-out;
-		-webkit-transition: border-color 0.2s ease-in-out;
-		-ms-transition: border-color 0.2s ease-in-out;
-		transition: border-color 0.2s ease-in-out;
+	font-family: "Montserrat", 
+	sans-serif,-moz-transition: 
+	border-color 0.2s ease-in-out;
+	-webkit-transition: border-color 0.2s ease-in-out;
+	-ms-transition: border-color 0.2s ease-in-out;
+	transition: border-color 0.2s ease-in-out;
 }
 
 .row-padding img {
@@ -22,11 +22,6 @@ body, h1,h2,h3,h4,h5,h6 {
 @media only screen and (max-width: 600px) {
 	#main {margin:0;}
 }
-
-#hr {
-	border:1!important;
-}
-
 
 .no-pad {
 	padding: 0;
@@ -58,7 +53,7 @@ body, h1,h2,h3,h4,h5,h6 {
 
 .image-overlay-center {
 	position: absolute;
-    top: 57%;
+    top: 48%;
     left: 68%;
     transform: translate(-50%, -50%);
 }
@@ -153,6 +148,10 @@ body, h1,h2,h3,h4,h5,h6 {
 	.image-overlay-center>h6 {
 		font-size:1.5em;
 		text-align: center;
+	}
+
+	.dark-title-pc {
+		color: #000040;
 	}
 }
 
@@ -275,12 +274,40 @@ h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin
 .bar-block.center .bar-item{text-align:center}.block{display:block;width:100%}
 
 /* button display */
-.btn,.button{border:none;display:inline-block;outline:0;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
-.button:hover{color:#000;background-color:#ccc}
+.btn,.button {
+	border:none;
+	display:inline-block;
+	outline:0;padding:8px 16px;
+	vertical-align:middle;
+	overflow:hidden;
+	text-decoration:none;
+	color:inherit;
+	background-color:inherit;
+	text-align:center;
+	cursor:pointer;
+	white-space:nowrap
+}
+.button:hover {
+	color:#000;
+	background-color:#ccc
+}
 
 /* padding settings */
-.padding-small{padding:4px 8px}.padding{padding:8px 16px}.padding-large{padding:12px 24px}
-.opacity,.hover-opacity:hover{opacity:0.60}.opacity-off,.hover-opacity-off:hover{opacity:1}
+.padding-small {padding:4px 8px}.padding{padding:8px 16px}.padding-large{padding:12px 24px}
+
+hr {
+	border: 0;
+	clear:both;
+	display:block;              
+	background-color:#ffffff;
+	height: 1px;
+}
+
+.opacity,.hover-opacity:hover{
+	opacity: 0.60;
+}
+
+.opacity-off,.hover-opacity-off:hover{opacity:1}
 .opacity-max{opacity:0.25}.opacity-min{opacity:0.75}
 
 
