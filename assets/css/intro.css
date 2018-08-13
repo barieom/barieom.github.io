@@ -227,7 +227,7 @@
 		transform: translate3d(0,0,0);
 		/* Set your background with this */
 
-		background:  /*url("assets/imagescasualairport_nc.jpg") */ #3B6AAF url(assets/imagescalvinhobbes.png) bottom left ;
+		background:  /*url("assets/images/casualairport_nc.jpg") */ #111111/*#3B6AAF*/ url("../images/calvinhobbes.png") bottom left ;
 		background-repeat:repeat-x;
 		/*background-size:cover;*/
 		height: 100%;
@@ -358,7 +358,7 @@
 		animation: overlay 1.5s 1.5s forwards;
 		background-attachment: fixed, fixed;
 		/*background-color: #111;*/
-		/*background-image: url("assets/imagesoverlay-pattern.png"), url("assets/imagesoverlay.svg");*/
+		/*background-image: url("assets/images/overlay-pattern.png"), url("assets/images/overlay.svg");*/
 		background-position: top left, center center;
 		background-repeat: repeat, no-repeat;
 		background-size: auto, cover;
