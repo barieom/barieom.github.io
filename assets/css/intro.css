@@ -99,7 +99,6 @@
 
 	a:hover {
 			border-color: transparent;
-			color: #B0E2FF;
 
 	}
 
@@ -119,7 +118,6 @@
 			font-style: normal;
 			font-weight: normal;
 			text-transform: none !important;
-			/*background-color: #BBf0fD;*/
 			opacity:.95;
 			color: rgba(255, 255, 255, 1);
 		}
@@ -227,9 +225,9 @@
 		-webkit-transform: translate3d(0,0,0);
 		-ms-transform: translate3d(0,0,0);
 		transform: translate3d(0,0,0);
-	/* Set your background with this */
+		/* Set your background with this */
 
-		background: #3B6AAF url(images/calvinhobbes.png) bottom left/*url("images/me.jpg")*/;
+		background:  /*url("assets/imagescasualairport_nc.jpg") */ #3B6AAF url(assets/imagescalvinhobbes.png) bottom left ;
 		background-repeat:repeat-x;
 		/*background-size:cover;*/
 		height: 100%;
@@ -360,7 +358,7 @@
 		animation: overlay 1.5s 1.5s forwards;
 		background-attachment: fixed, fixed;
 		/*background-color: #111;*/
-		/*background-image: url("images/overlay-pattern.png"), url("images/overlay.svg");*/
+		/*background-image: url("assets/imagesoverlay-pattern.png"), url("assets/imagesoverlay.svg");*/
 		background-position: top left, center center;
 		background-repeat: repeat, no-repeat;
 		background-size: auto, cover;
@@ -696,7 +694,7 @@
 				}
 
 				#header nav a:hover {
-					font-size: 1.1em;
+					font-size: 1.2em;
 				}
 
 					#header nav a:hover:before {
@@ -733,6 +731,32 @@
 		position: absolute;
 		text-align: center;
 		width: 100%;
+	}
+	.expand:before {
+					-moz-transition: all 0.3s ease-in-out;
+					-webkit-transition: all 0.3s ease-in-out;
+					-ms-transition: all 0.3s ease-in-out;
+					transition: all 0.3s ease-in-out;
+					border: solid 1px #fff;
+					display: block;
+					font-size: 1.75em;
+					height: 2.5em;
+					line-height: 2.5em;
+					position: relative;
+					text-align: center;
+					top: 0;
+					width: 2.5em;
+				}
+				.expand {-moz-transition: border-color 0.2s ease-in-out;
+		-webkit-transition: border-color 0.2s ease-in-out;
+		-ms-transition: border-color 0.2s ease-in-out;
+		transition: border-color 0.2s ease-in-out;
+		border-bottom: dotted 0px;
+		color: inherit;
+		outline: 0;
+		text-decoration: none;}
+	.expand:hover {
+					font-size: 1.03em;
 	}
 
 /* Normal */

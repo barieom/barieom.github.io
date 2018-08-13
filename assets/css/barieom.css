@@ -28,7 +28,7 @@ body, h1,h2,h3,h4,h5,h6 {
 
 .back_black,.hover_black:hover{
 	color:#fff;
-	background-color:#1f1f1f
+	background-color:#1f1f1f;
 }
 
 .background_text{
@@ -41,10 +41,10 @@ body, h1,h2,h3,h4,h5,h6 {
 }
 
 .barrybackground {
-    background-image: url("../images/airportcasual_nc.jpg");
+    background-image: url("../images/airportcasual_nc_side.jpg");
     /*background-image: url("../images/glass-adj.jpg");*/
     height: 50em; 
-    width:100%;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -52,29 +52,102 @@ body, h1,h2,h3,h4,h5,h6 {
 
 .image-overlay-center {
 	position: absolute;
-    top: 70%;
-    left: 50%;
+    top: 57%;
+    left: 68%;
     transform: translate(-50%, -50%);
 }
 
-.image-overlay-center>h2 {
-	font-size: 5em;
+
+.dark-title {
+	color: #000040;
 }
 
-.image-overlay-center>h6 {
-	font-size:1.5em;
+.header-center {
 	text-align: center;
+	margin-top:4em;
+}
+
+.about-sec {
+	margin:0;
+	background-color: #262626;
+	padding:2em;
+}
+
+.about-sec-alt {
+	margin: 0;
+	background-color: #303030;
+	padding:2em;
+}
+
+.about-sec-alt-b {
+	margin: 0;
+	background-color: #383838;
+	padding:2em;
+}
+
+.about-head {
+	border-bottom: 1em;
+	border-color:white;
+	margin-bottom: 0.05em;
+}
+
+.about-head-div {
+	width:5em;
+	margin-top: .5em
+}
+
+.about-text {
+	margin:0;
 }
 
 @media (min-width:993px) {
 	.modal-content{width:900px}
 	.hide-large{display:none}
 	.sidebar.collapse{display:block}
+	.main {margin-top:2em;}
 }
 
 @media (max-width:992px) {
 	.sidebar.collapse{display:none}
 	.main{margin-left:0;margin-right:0}
+}
+
+@media (max-width:600px) {
+	.content {
+		padding-right:1em;
+		padding-left:1em;
+		margin:auto;
+	}
+
+	.image-overlay-center>h2 {
+		font-size: 3em;
+	}
+
+	.image-overlay-center>h6 {
+		font-size:1.5em;
+		text-align: center;
+	}
+}
+
+@media (min-width:601px) {
+	.content {
+		padding-right:10em;
+		padding-left:10em;
+		margin:auto;
+	}
+
+	.image-overlay-center {
+		white-space: nowrap;
+	}
+
+	.image-overlay-center>h2 {
+		font-size: 6em;
+	}
+
+	.image-overlay-center>h6 {
+		font-size:1.5em;
+		text-align: center;
+	}
 }
 
 .main,#main {
@@ -88,9 +161,10 @@ body, h1,h2,h3,h4,h5,h6 {
 	outline:0;
 	width:600px;
 }
-.bar {
+
+/*.bar {
 	width:100%;overflow:hidden
-}
+}*/
 .center .bar {
 	display:inline-block; 
 	width:auto;
@@ -114,12 +188,7 @@ a {
 
 .padding-bottom {padding-bottom:5em;}
 .padding-rec {padding-bottom:12px}
-.content {
-	padding-top:3em;
-	padding-right:10em;
-	padding-left:10em;
-	margin:auto
-}
+
 
 .section-title-pad>h2 {
 	padding-left:4em;
@@ -150,9 +219,25 @@ a {
 	text-align:center
 }
 
+.button {
+	background-color: #444444!important;
+}
 
+.top,.bottom{
+	/*position:fixed;*/
+	position:sticky;
+	width:auto;
+	z-index:1;
+	margin:0;
+	padding:0;
+}
+.top {
+	top:0;
+}
+.bottom {
+	bottom:0;
+}
 
-.top,.bottom{position:fixed;width:100%;z-index:1}.top{top:0}.bottom{bottom:0}
 .wide{letter-spacing:4px}
 .margin-left{margin-left:16px}.push-left{margin-left:0px}.margin-right{margin-right:16px}.paragraph-shift{margin-left:40px}
 .margin-pics{margin-left:24px}.role-shift{margin-right:60px}
@@ -174,7 +259,7 @@ h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin
 .dark-green,.hover-dark-green:hover,.dark-green,.hover-dark-green:hover{color:#fff;background-color:#002040}
 
 /* bar drawing setters */
-.bar .bar-item{padding:8px 16px;float:left;width:auto;border:none;outline:none;display:block}
+.bar .bar-item{padding:3% 3%;float:left;width:auto;border:none;outline:none;display:block}
 .bar .dropdown-hover,.bar .dropdown-click{position:static;float:left}
 .bar .button{white-space:normal}
 .bar-block .dropdown-hover,.bar-block .wdropdown-click{width:100%}

@@ -1,313 +1,437 @@
 <!DOCTYPE html>
 <html>
-<head><link rel="shortcut icon" href="images/favicon.png">
+<head><link rel="shortcut icon" href="assets/images/favicon.png">
 <title>Barry Eom, the Barium</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
-
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link rel="stylesheet" type="text/css" href="barieom.css">
+<link rel="stylesheet" type="text/css" href="assets/css/barieom.css">
+<link rel="script" href="assets/main.js"> 
 
 
 <style>
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.row-padding img {margin-bottom: 12px}
-.sidebar {width: 120px;background: #222;}
-/* left margin to accomodate for the sidebar */
-/*#main {margin-left: 120px}*/
-.nav-pills>li>a {border-radius: 0px; }
-
-
-
-
 </style>
 </head>
 
-<body class="back_black" data-spy="scroll" data-target="#myScrollspy" data-offset="20">
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="sidebar bar-block mid_small hide-small center" id="myScrollspy">
-  <!-- Avatar image in top left corner -->
-  
-  <img src="images/linked_in.png" class="image" alt="Barry's profile photo">
-  <ul class="nav nav-pills nav-stacked">
-    <li class="active"><a href="#home" class="bar-item button padding-large hover_black">
-    <i class="fa fa-bold xxlarge"></i>
-    <p>B. EOM</p>
-  </a></li>
- <li> <a href="#about" class="bar-item button padding-large hover_black">
-    <i class="fa fa-user xxlarge"></i>
-    <p>ABOUT</p>
-  </a></li>
-  <li><a href="#projects" class="bar-item button padding-large hover_black">
-    <i class="fa fa-paper-plane xxlarge"></i>
-    <p>PROJECTS</p>
-  </a></li>
-  <li> <a href="#recommendation" class="bar-item button padding-large hover_black">
-    <i class="fa fa-quote-left xxlarge"></i>
-    <p class="push-quote-left"> REVIEWS</p>
-  </a></li>
-  <li><a href="#contact" class="bar-item button padding-large hover_black">
-    <i class="fa fa-envelope xxlarge"></i>
-    <p>CONTACT</p>
-  </a></li></ul>
-</nav>
+<!-- <body class="back_black" data-spy="scroll" data-target="#myScrollspy" data-offset="20"> -->
+<body class="back_black" >
+	<nav class="no-pad navbar sticky-top navbar-expand-lg navbar-primary bg-dark mid_small hide-small" id="myScrollspy">
+		<div class="collapse navbar-collapse" id="navbarCollapse">
+			<ul class="navbar-nav mr-auto nav-word nav-pills">
+				<li class="nav-item">
+					<a class=" nav-link nav-word hover_black" href="#barryhome">Barry Eom</a>
+				</li>
+				<li class="nav-item">
+					<a class=" nav-link nav-word hover_black" href="#about">About</a>
+				</li>
+				<li class="nav-item">
+					<a class=" nav-link nav-word hover_black" href="#techprojects">Technical Projects</a>
+				</li>
+				<li class="nav-item">
+					<a class=" nav-link nav-word hover_black" href="#projects">Other Projects</a>
+				</li>
+				<li class="nav-item">
+					<a class=" nav-link nav-word hover_black" href="#recommendation">Recommendations</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
 
-<!-- small screens -->
-<div class="top hide-large hide-medium" id="myNavbar">
-  <div class="bar back_black opacity hover-opacity-off center mid_small">
-    <a href="#" class="bar-item button" style="width:25% !important">HOME</a>
-    <a href="#about" class="bar-item button" style="width:25% !important">ABOUT</a>
-    <a href="#projects" class="bar-item button" style="width:25% !important">PROJECTS</a>
-    <a href="#contact" class="bar-item button" style="width:25% !important">CONTACT</a>
-  </div>
-</div>
+	<!-- small screens -->
+	<div class="top hide-large hide-medium" id="myNavbar">
+		<div class="bar back_black opacity hover-opacity-off center mid_small">
+			<a href="#" class="bar-item button" style="width:25%">HOME</a>
+			<a href="#about" class="bar-item button" style="width:25% ">ABOUT</a>
+			<a href="#techprojects" class="bar-item button" style="width:25% ">PROJECTS</a>
+			<a href="#contact" class="bar-item button" style="width:25% ">RECS</a>
+		</div>
+	</div>
 
-<!-- Page Content -->
-<div class="" id="main">
-  <!-- Header/Home -->
-  <header class="container center padding-bottom" id="home">
-    <h1 class="jumbo"><span class="hide-small">I'm</span> Barry Eom </h1>
-    <p>Consultant | Leader | Researcher | Volunteer | CompSci and CogSci Student</p>
-    <img src="images/linked_in_bw1.jpg" alt="More of Barry's Portrait" class="image" width="420" height="600">
-  </header>
+	<!-- Page Content -->
+	<div id="main">
+		<div class="intro-image-container" id="barryhome">
+			<div class="barrybackground">
+			</div>
+			<div class="image-overlay-center">
+				<h2>Barry <span class="dark-title">Eom</span></h2>
+			</div>
+		</div>
 
-  <!-- About Section -->
-  <div class="justify text-dark-white" id="about">
-    <div class="content">
-    <h2 class="text-light-grey">Barry Eom </h2>
-    <hr class="opacity push-left">
-    <p>Barium | Barry Eom | Byuri Eom | 엄벼리 | 嚴 ビョリ</p>
-    <p class =padding-16>&emsp;&emsp;&emsp;My last name is pronounced "uhm," so people call me "Barium." Disclaimer: I am not a chemistry major.<br>
-       &emsp;&emsp;&emsp;I am a student at Tufts University with curiosity to learn and strong passion in making a difference in the world. Whether it be by directly helping someone in need or tackling grievous issues like homelessness in my community, I have always cherished the fact that anyone could be of positive influence, even if small, to the world.<br>
-       &emsp;&emsp;&emsp;Majoring in computer science and cognitive and brain sciences, I am invested in the varying impact major tech companies, as well as tech startups, have on society, as they function as the main facilitator of innovation and are currently one of the biggest drivers of change in the world. In particular, as a novice in this field, I am interested and hope to specialize in the machine learning/AI or the AR industry. For now, I am focused on developing my technical skills and learning as much as possible about CS and CBS. My coursework thus far includes - data structures, machine language and structure, OOP with GUI, linear algebra, discrete mathematics, and more.<br>
-       &emsp;&emsp;&emsp;Currently, I work as the Chair of Business Intelligence for the National Consulting Committee of the TAMID Group, analyzing consulting data on a national scale to improve the TAMID consulting vertical. In addition, for the TUFTS TAMID Group, I serve as the Director of Consulting and a consulting project manager, as well as leading weekly education seminars on varying consulting topics through Harvard Business Review Cases. In addition, I have conducted research on mind wandering through VTC analysis. As I have always been fascinated by the brain, I am ecstatic to have had the opportunity to do research on cognition as a side project. I am also a lead figure of Leonard Carmichael Society - a community service based umbrella organization with 1200+ members - and a part of Jumbo Code, a pro-bono tech development group on campus.<br>
-       &emsp;&emsp;&emsp;My interests are soccer (#COYS), MLB and NFL statistics, being an unstable LA/SD Chargers fan, listening to and playing the piano, cooking, and reading books on philosophy. From the implications of Absurdism and the meaning of life to the recent emergence of Tottenham Hotspurs, I enjoy talking about a lot of things. If you would like to reach out, feel free to contact me at: b.eom[at]tufts.edu. (Change [at] to @)
-    </p> <p class="background_text">Barry Eom Barry Eom Barry Eom Barry Eom Barry Eom Barry Eom Byuri Eom Barry Eom Barry Eom SEO is cool!</p>
-    <h3 class="text-light-grey">Skills and Background</h3>
-    <hr style="width:200px" class="opacity push-left">
-    <div class="padding-rec"><p class="wide">Programming</p>
-    <div class="dark-green">
-      <div class="dark-grey" style="height:28px;width:89%"></div>
-    </div>
-    <div class="paragraph-shift"><p>Languages: C, C++, MATLAB, Python, Java, HTML/Javascript/CSS <br>
-    	I started learning C++, my first 'comp sci' language, at the beginning of freshman year. Since then, I've picked up half a dozen languages and continue to find different problems to solve with my added skills. I'm always looking to improve and build upon my computer science skills. I've worked on several side projects - more detail can be found below. </p></div></div>
-   
-    <div class="padding-rec"> <p class="wide">Data Analytics</p>
-    <div class="dark-green">
-      <div class="dark-grey" style="height:28px;width:84%"></div>
-    </div>
-    <div class="paragraph-shift"><p>My interest in data stems from my love of sports, especially football, football (or soccer), and baseball. I naturally found myself seeking resources that broke down player and team performances. It goes without saying that finding FiveThirtyEight and Harvard Sports Analysis had a huge influence on me. This past summer, I did data analysis at a neurocognition lab, which you can read about in the projects section. Currently, I serve on the Business Intelligence Chair of the National Consulting Committee of TAMID Group, where I am in charge of retrieving and breaking down data to improve the organization's consulting methodology.</p></div></div>
 
-   <div class="padding-rec"> <p class="wide">Consulting</p>
-    <div class="dark-green">
-      <div class="dark-grey" style="height:28px;width:93%"></div>
-    </div>
-    <div class="paragraph-shift"><p>I always thought my future was in academia, as both my parents work as professors; however, after much exposure to academia, I realized I wanted something more. Fully taking advantage of the saying 'try new things in college!,' I tried consulting without knowing what it really was, but fell in love with the dynamic and meaningful project based research work done in the consulting field. Since then, I've taken bigger roles in the TAMID Group and emerged as a leader.</p></div></div>
+	  	<!-- About Section -->
+		<div class="justify text-dark-white" id="about">
 
-    <div class="padding-rec"><p class="wide">Leadership</p>
-    <div class="dark-green">
-      <div class="dark-grey" style="height:28px;width:97%"></div>
-    </div>
-    <div class="paragraph-shift"><p>I am a leader. From founding and directing a fundraising event that has raised over $15,000 to being in charge of an on-campus group with more than 1200 members, I have the vision, passion, and integrity of a leader. As I believe that good leadership is founded upon the empowerment and motivation of a team/group, I try my best to connect to everyone and spark more ambition from them.</p></div></div>
+			<div class="header-center center">
+					<h2 class="text-light-grey">Barry Eom </h2>
+					<hr class="opacity push-left"/>
+					<!-- <h6>Leader | Product Manager | Consultant | Volunteer | Researcher | Student </h6> -->
+					<p>Barium | Byuri Eom | 엄벼리 <!-- | 嚴 ビョリ --></p>
+				</div>
+			<div class="content">
+				
+				<div class="about-sec">
+					<h6 class="about-head">My Name</h6>
+					<hr class="about-head-div push-left"/>
+					<p class="about-text">My last name is pronounced "uhm," so people call me "Barium." I am not a chemistry major.</p>
+				</div>
+				<div class="about-sec-alt">
+					<h6 class="about-head">Intro</h6>
+					<hr class="about-head-div push-left"/>
+					<p class="about-text">I am studying computer science, cognitive and brain sciences, and economics at Tufts University. My coursework thus far includes - data structures, machine language and structure, OOP with GUI, linear algebra, discrete mathematics, and more. Whether it be by directly helping someone in need or tackling grievous issues like homelessness in my community, I have always cherished the fact that anyone could be of positive influence, even if small, to the world.</p>
+				</div>
+				<div class="about-sec-alt-b">
+					<h6 class="about-head">My Big Project</h6>
+					<hr class="about-head-div push-left"/>
+					<p class="about-text">I am launching the TAMID–Keyrus Data Science Group on the fall of 2018. I conceived the idea of this organization when I realized that most college campuses lack mediums for students to explore data science. Rather than taking online classes on my own, I decided to take initiative by creating a scalable national data science organization. I first persistently reached out to <a href="www.keyrus.com">Keyrus</a>, ultimately establishing a partnership with the international firm to incept the TAMID–Keyrus Data Science Group. I created the data science education curriculum with the help of Keyrus and resourced data case projects, Vistaprint being one of the clients. Now, the group is launched at Tufts University, with plans to expand nationally next year.</p>
+				</div>
+				<div class="about-sec-alt">
+					<h6 class="about-head">Product Manager</h6>
+					<hr class="about-head-div push-left"/>
+				  	<p class="about-text"> I am an aspiring PM. I have a strong passion for product development. I had the privilege of working as an associate product owner at Vistaprint, creating an internal dashboard that keeps track of their 2 billion dollar revenue and goals. Up to this point, I have acquired and developed a set of skills crucial for product management–business acumen, ability to see and breakdown big picture goals, technical skills, empathizing with engineers, communication skills, and ambitious initiative. </p>
+				</div>
+				<div class="about-sec">
+					<h6 class="about-head">Experience Overview</h6>
+					<hr class="about-head-div push-left"/>
+				  	<p class="about-text">
+				   Currently, I work as the Chair of Business Intelligence for the National Consulting Committee of the TAMID Group, analyzing consulting data on a national scale to improve the TAMID consulting vertical. In addition, for the TUFTS TAMID Group, I serve as the Director of Consulting and a consulting project manager, as well as leading weekly education seminars on varying consulting topics through Harvard Business Review Cases. In addition, I have conducted research on mind wandering through VTC analysis. As I have always been fascinated by the brain, I am ecstatic to have had the opportunity to do research on cognition as a side project. I am also a lead figure of Leonard Carmichael Society - a community service based umbrella organization with 1200+ members - and a part of Jumbo Code, a pro-bono tech development group on campus.</p>
+				</div>
+				<div class="about-sec-alt">
+					<h6 class="about-head">Interests</h6>
+					<hr class="about-head-div push-left"/>
+				  	<p class="about-text">  
+				   My interests are soccer (#COYS), MLB and NFL statistics, being an unstable LA/SD 
+				   Chargers fan, listening to and playing the piano, cooking, and reading books on philosophy. From the implications of Absurdism and the meaning of life to the recent emergence of Tottenham Hotspurs, I enjoy talking about a lot of things. If you would like to reach out, feel free to contact me at: b.eom[at]tufts.edu. (Change [at] to @)</p> 
+				</div>
+				<div class="padding-rec">
+					<p class="wide">Resume</p>
+					<a href="assets/supplemental_material/BarryEom_Resume.pdf">
+						<button class="button light-grey padding-large section">
+							<i class="fa fa-download"></i> Download Resume
+			  			</button>
+			  		</a>
+				</div>
+			</div>
 
-    <div class="padding-rec"><p class="wide">Cognitive Sciences Research</p>
-    <div class="dark-green">
-      <div class="dark-grey" style="height:28px;width:69%"></div>
-    </div>
-    <div class="paragraph-shift"><p>Ever since reading masterpieces by Oliver Sacks, I have always been fascinated by the brain. My initial motivation for going into computer science was to give myself the necessary tools to research the brain. Although my life has taken a different path, my interest in cognition is still here. My most recent research has been on mind wandering, and I hope to continue doing research on the brain as a side project.</p></div></div>
-    <div class="padding-rec"><p class="wide">Other Skills</p>
-    <div class="dark-green">
-      <div class="dark-grey" style="height:28px;width:76%"></div>
-    </div>
-    <div class="paragraph-shift"><p>I am fluent in Korean and Japanese (and... English!). In addition to being trilingual, I enjoy teaching, as I love breaking down something complex to something more simple, and am a good public speaker, as I lead weekly sessions on the cornerstones of consulting and Harvard Business Review Cases for Tufts University students interested in doing consulting. I am also a decent writer, having won the Scholastic Gold Key for a writing portfolio. </p></div>
-    <br>
-    <div class="padding-rec"><p class="wide">Resume</p>
-    
-      <a href="supplemental_material/BarryEom_Resume.pdf"><button class="button light-grey padding-large section">
-      <i class="fa fa-download">
-      </i> Download Resume
-      </button> </a>
-    
-    <br></div></div>
+			<div class="header-center center">
+				<h3 class="text-light-grey">Skills and Background</h3>
+				<hr class="opacity push-left"/>
+			</div>
+			<div class="content">
+				<div class="padding-rec">
+					<p class="wide">Product Management</p>
+					<div class="dark-green">
+						<div class="dark-grey" style="height:28px;width:68%"></div>
+					</div>
+					<div class="paragraph-shift">
+						<p>I have great business acumen, ability to break down big picture goals to smaller increments, technical skills and understanding, ambitious goals, and a scrappy attitude. My experience consists of working as an associate product owner at Vistaprint for the summer of 2018. I oversaw the whole product development an internal dashboard, working closely with my stakeholders–a dozen senior executives and directors. I delivered an MVP that was extremely well received and now the product is used by everyone at Vistaprint. Finally, of course, I have much to learn and am constantly learning to be a better PM. </p>
+					</div>
+				</div>
 
-    <!-- </div> -->
-  <!-- End About Section -->
-</div>
-  </div>
-  
-  <!-- Portfolio Section -->
-  <div class=" content" id="projects">
-    <h2 class="text-light-grey">Projects</h2>
-    <p>Click on the picture for respective links</p>
-    <hr class="opacity push-left">
+				<div class="padding-rec">
+					<p class="wide">Programming</p>
+					<div class="dark-green">
+						<div class="dark-grey" style="height:28px;width:89%"></div>
+					</div>
+					<div class="paragraph-shift">
+						<p>Languages: C, C++, MATLAB, Python, Java, Javascript, HTML5/CSS <br>
+						I started learning C++, my first language, at the beginning of freshman year. Since then, I've been fascinated by the complex problems that CS has enabled me to solve. I've worked on several side projects - more detail can be found below. </p>
+					</div>
+				</div>
+			   
+				<div class="padding-rec"> <p class="wide">Data Analytics</p>
+					<div class="dark-green">
+						<div class="dark-grey" style="height:28px;width:84%"></div>
+					</div>
+					<div class="paragraph-shift">
+						<p>I've founded the TAMID-Keyrus Data Science Group. My interest in data stems from my love of sports, especially football, football (or soccer), and baseball. I naturally found myself seeking resources that broke down player and team performances. It goes without saying that finding FiveThirtyEight and Harvard Sports Analysis had a huge influence on me. </p>
+					</div>
+				</div>
 
-    <!-- Grid for projects -->
-    <div class="row-padding" style="margin:0 -16px">
-    <h3 class="text-light-grey">Computer Science Projects</h3>
-      <div class="row-pics">
-      <div class="column-pics">
-        <div class="gallery">
-        	<div class="tooltip-mine">
-        	<a href = "https://itunes.apple.com/us/app/punto-urban-art-museum/id1320710363?mt=8">
-          <img src="images/PUAM.jpg" class="image" alt="PUAM image">
-          <span class="tooltip-minetext">Punto Urban Art Museum Application</span></a>
-        	</div>
-          <div class="desc">I implemented the backend of this application by setting up the Flask and integrating Google Firebase for all data related aspect of the app</div></div><br>
-    	
-          <div class="gallery">
-      	  <div class="tooltip-mine">
-        	<a href = "https://github.com/barieom/arithCompress">
-          <img src="images/arith.JPG" class="image"  alt="compression">
-          <span class="tooltip-minetext">Image Compression Program written in C</span></a>
-      	  </div>
-          <div class="desc">An image compression program written in C. Most of the compression is done via bit-packing and some basic number transformation</div></div>
-      </div>
-      <div class="column-pics">
-        <div class="gallery">
-  		    <div class="tooltip-mine">
-        	<a href = "https://github.com/barieom/its_raining_cats_and_dogs">
-          <img src="images/CatsAndDogs.JPG"  alt="Cats and Dogs">
-          <span class="tooltip-minetext">It's Raining Cats and Dogs: A Head movement based game</span>
-        </a>
-    	    </div>
-          <div class="desc">An interactive simple game my friend and I made using head/face-tracking capabilities</div></div>
+			   	<div class="padding-rec"> 
+			   		<p class="wide">Consulting</p>
+					<div class="dark-green">
+						<div class="dark-grey" style="height:28px;width:93%"></div>
+					</div>
+					<div class="paragraph-shift">
+						<p>I always thought my future was in academia, as both my parents work as professors; however, after much exposure to academia, I realized I wanted something more. Fully taking advantage of the saying 'try new things in college!,' I tried consulting without knowing what it really was, but fell in love with the dynamic and meaningful project based research work done in the consulting field. Since then, I've taken bigger roles in the TAMID Group and emerged as a leader.</p>
+					</div>
+				</div>
 
-        <div class="gallery">
-          <div class="tooltip-mine">
-        	<a href = "https://github.com/barieom/GameOfThrones">
-          <img src="images/GoT.JPG" class="image"  alt = "Game of Thrones">
-          <span class="tooltip-minetext">Game of Thrones Interactive Game</span></a>
-      	  </div>
-          <div class="desc">As a big Game of Thrones fan, I had to make a game based on the best TV series of all time. Written in Java, maing objective is to prevent the White Walkers from taking over Westeros</div></div>
-      </div>
+				<div class="padding-rec">
+					<p class="wide">Leadership</p>
+					<div class="dark-green">
+						<div class="dark-grey" style="height:28px;width:97%"></div>
+					</div>
+					<div class="paragraph-shift">
+						<p>I am a leader. From founding and directing a fundraising event that has raised over $15,000 to being in charge of an on-campus group with more than 1200 members, I have the vision, passion, and integrity of a leader. As I believe that good leadership is founded upon the empowerment and motivation of a team/group, I try my best to connect to everyone and spark more ambition from them.</p>
+					</div>
+				</div>
 
-      <div class="column-pics">
-        <div class="gallery">
-          <div class="tooltip-mine">
-            <a href="https://github.com/barieom/MindWandering_Research_Processing_Scripts">
-              <img src="images/mw_vtc.jpg" alt="mind-wandering pic">
-              <span class="tooltip-minetext">Variance Time Course Analysis Data Processing Script</span>
-            </a>
-          </div>
-          <div class="desc">A small sample of data processing script I scripted for investigating mind-wandering. Method of analysis is VTC (Variance Time Course)</div>
-        </div>
-      </div>
-      </div>
-    </div>
+				<div class="padding-rec"><p class="wide">Cognitive Sciences Research</p>
+					<div class="dark-green">
+						<div class="dark-grey" style="height:28px;width:69%"></div>
+					</div>
+					<div class="paragraph-shift">
+						<p>Ever since reading masterpieces by Oliver Sacks, I have always been fascinated by the brain. My initial motivation for going into computer science was to give myself the necessary tools to research the brain. Although my life has taken a different path, my interest in cognition is still here. My most recent research has been on mind wandering, and I hope to continue doing research on the brain as a side project.</p>
+					</div>
+				</div>
+				<div class="padding-rec"><p class="wide">Other Skills</p>
+					<div class="dark-green">
+						<div class="dark-grey" style="height:28px;width:76%"></div>
+					</div>
+					<div class="paragraph-shift">
+						<p>I am fluent in Korean and Japanese (and... English!). In addition to being trilingual, I enjoy teaching, as I love breaking down something complex to something more simple, and am a good public speaker, as I lead weekly sessions on the cornerstones of consulting and Harvard Business Review Cases for Tufts University students interested in doing consulting. I am also a decent writer, having won the Scholastic Gold Key for a writing portfolio. </p>
+					</div>
+					<br>
+				</div>
+			</div>
+	  	</div>
+	  
+	  	<!-- Portfolio Section -->
+		<div class="portfolio-section" id="techprojects">
+			<div class="spotlight row">
+				<div class="col-5 pic">
+					<div class="tooltip-mine">
+						<a href = "https://itunes.apple.com/us/app/punto-urban-art-museum/id1320710363?mt=8">
+							<img src="assets/images/puam.png" class="portfolio-img" alt="PUAM image">
+							<span class="tooltip-minetext">Punto Urban Art Museum Application</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-7 portfolio-desc">
+					<h5>Punto Urban Art Museum</h5>
+					Punto Urban Art Museum Application is a mobile application developed by a team of 6 developers at Tufts. I implemented the backend of this application by setting up the Flask and integrating Google Firebase for all data related aspect of the app
+				</div>
+			</div>
+			<div class="spotlight-alt row">
+				<div class="col-7 portfolio-desc">
+					<h5>Jobos: Find a job now!</h5>
+					A job finding platform for students to find different jobs around university campus created by me and two other student at Tufts. This platform was created using HTML5/CSS/Javascript, MongoDB, bootstrap, with Node JS framework.
+				</div>
+				<div class="col-5 pic">
+					<div class="tooltip-mine">
+						<a href = "https://job-os.herokuapp.com">
+							<img src="assets/images/jobos.png" class="portfolio-img"  alt="jobos">
+							<span class="tooltip-minetext">Job-os: Find a job!</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="spotlight row">
+				<div class="col-5 pic">
+					<div class="tooltip-mine">
+						<a href = "https://github.com/barieom/its_raining_cats_and_dogs">
+							<img src="assets/images/CatsAndDogs.JPG"  class="portfolio-img" alt="Cats and Dogs">
+							<span class="tooltip-minetext">It's Raining Cats and Dogs: A Head movement based game</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-7 portfolio-desc">
+					<h5>It's raining cats and dogs</h5>
+					An interactive simple game my friend and I made using head/face-tracking capabilities
+				</div>
+			</div>
+			<div class="spotlight-alt row">
+				<div class="col-7 portfolio-desc">
+					<h5>Game of Thrones: Winter Storm</h5>
+					As a big Game of Thrones fan, I had to make a game based on the best TV series of all time. Written in Java, maing objective is to prevent the White Walkers from taking over Westeros
+				</div>
+				<div class="col-5 pic">
+					<div class="tooltip-mine">
+						<a href = "https://github.com/barieom/GameOfThrones">
+							<img src="assets/images/GoT.JPG" class="portfolio-img"  alt = "Game of Thrones">
+							<span class="tooltip-minetext">Game of Thrones Interactive Game</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="spotlight row">
+				<div class="col-5 pic">
+					<div class="tooltip-mine">
+						<a href="https://github.com/barieom/MindWandering_Research_Processing_Scripts">
+							<img src="assets/images/mw_vtc.jpg" class="portfolio-img" alt="mind-wandering pic">
+							<span class="tooltip-minetext">
+								Variance Time Course Analysis Data Processing Script
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-7 portfolio-desc">
+					<h5>Variance Time Course Analysis Data Processing Script</h5>
+					A small sample of data processing script I scripted for investigating mind-wandering. Method of analysis is VTC (Variance Time Course
+				</div>
+			</div>
+		</div>
 
-      <div class="row-padding" style="margin:0 -16px">
-      <h3 class="text-light-grey">Other Projects and Researches</h3>
-      <hr style="width:200px" class="opacity push-left">
-      <div class="row-pics">
-      <div class="column-pics">
-        <div class="gallery">
-        <div class="tooltip-mine">
-        <a href = "http://belmontonian.com/news/coffeehouse-hits-right-chord-helping-stock-youth-homeless-shelter/">
-        <img src="images/Coffeehouseforacause.jpg" class="image"  alt="Coffeehouseforacause">
-        <span class="tooltip-minetext">Coffeehouse for a Cause</span></a>
-        </div>
-        <div class="desc">I founded this fundraiser my sophomore year of high school. The intention was to cultivate a culture of giving in Belmont, MA, a rather affluent town isolated from homelessness. Initially planned as a minor event, Coffeehouse for a Cause gained a lot of attention from many residents of the town and is now an yearly tradition, having raised more than $15,000 to combat homelessness in the Greater Boston Area. I am working on establishing another coffeehouse based fundraiser at Tufts University next fall.</div></div>
-  
-        <div class="gallery">
-        <div class="tooltip-mine">
-        <a href = "https://drive.google.com/file/d/1ZU9MJQEIsHwiXe-IC_KvWTk_M-8qKfUg/view?usp=sharing">
-        <img src="images/dhfr1.jpg" class="image" alt="ProteinResearch">
-        <span class="tooltip-minetext">Protein Toxicity Research</span></a>
-        </div>
-        <div class="desc">Brief research on protein toxicity.</div></div>
-      </div>
+		<div class="portfolio-section" id="projects">
+			<div class="spotlight-proj row">
+				<div class="col-7 portfolio-desc">
+					<h5>Coffeehouse for a Cause</h5>
+					I founded this fundraiser my sophomore year of high school. The intention was to cultivate a culture of giving in Belmont, MA, a rather affluent town isolated from homelessness. Initially planned as a minor event, Coffeehouse for a Cause gained a lot of attention from many residents of the town and is now an yearly tradition, having raised more than $15,000 to combat homelessness in the Greater Boston Area. I am working on establishing another coffeehouse based fundraiser at Tufts University next fall.
+				</div>
+				<div class="col-5 pic">
+					<div class="tooltip-mine">
+						<a href = "http://belmontonian.com/news/coffeehouse-hits-right-chord-helping-stock-youth-homeless-shelter/">
+							<img src="assets/images/Coffeehouseforacauselong.jpeg" class="portfolio-img-lg"  alt="Coffeehouseforacause"/>
+							<span class="tooltip-minetext">Coffeehouse for a Cause: Belmont</span>
+						</a>
+					</div>
+				</div>
+			</div>
 
-      <div class="column-pics">
-        <div class="gallery">
-        <div class="tooltip-mine">
-        <a href = "https://docs.google.com/presentation/d/13gjcOrDVDaL2tpCz4SrL4zXmbUeI6dSpwVm8IXAZQSk/edit?usp=sharing">
-        <img src="images/CureFacts.jpg" class="image" alt="CureFacts">
-        <span class="tooltip-minetext">Consulting final deliverable for CureFacts</span></a>
-        </div>
-        <div class="desc">I led a consulting team for our client CureFacts, an online medical resource startup. Rather than explaining who CureFacts is and what our project revolved around, take a look at our final deliverable!</div></div>
+			<div class="spotlight-proj-alt row">
+				<div class="col-5 pic">
+					<div class="tooltip-mine">
+						<a href = "https://drive.google.com/file/d/1ZU9MJQEIsHwiXe-IC_KvWTk_M-8qKfUg/view?usp=sharing">
+							<img src="assets/images/dhfr1.jpg" class="portfolio-img" alt="ProteinResearch">
+							<span class="tooltip-minetext">Protein Toxicity Research</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-7 portfolio-desc">
+					<h5>Research at Harvard Shakhnovic Research Group</h5>
+					Brief research on protein toxicity.
+				</div>
+			</div>
+			<div class="spotlight-proj row">
+				<div class="col-7 portfolio-desc">
+					<h5>Consulting work</h5>
+					I led a consulting team for our client CureFacts, an online medical resource startup. Rather than explaining who CureFacts is and what our project revolved around, take a look at our final deliverable!
+				</div>
+				<div class="col-5 pic">
+					<div class="tooltip-mine">
+						<a href = "http://belmontonian.com/news/coffeehouse-hits-right-chord-helping-stock-youth-homeless-shelter/">
+							<img src="assets/images/CureFacts.jpg" class="portfolio-img" alt="CureFacts">
+							<span class="tooltip-minetext">Consulting final deliverable for CureFacts</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="spotlight-proj-alt row">
+				<div class="col-5 pic">
+					<div class="tooltip-mine">
+						<a href = "https://drive.google.com/file/d/1vnhxuUvKdz0sIHFRICV5P9VDhNcRoZfq/view?usp=sharing">
+							<img src="assets/images/mw_research.jpg" class="portfolio-img" alt="Cognitive Research">
+							<span class="tooltip-minetext">Cognitive Research on Mind Wandering</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-7 portfolio-desc">
+					<h5>Cognitive Science Research: Measuring Mind Wandering</h5>
+					Cognitive sciences research on standardizing the measurement of mind-wandering, a crudely subjective state of mind. I executed this by writing more than a dozen of data processing scripts in MATLAB and Python to elucidate any correlation between mind wandering and reaction time, an objective form of measuring mind wandering
+				</div>
+			</div>
+			<div class="spotlight-proj row">
+				<div class="col-7 portfolio-desc">
+					<h5>Consulting work</h5>
+					I am currently leading a team of consultants for our client, Speaknow, an online language learning platform based startup.
+				</div>
+				<div class="col-5 pic">
+					<div class="tooltip-mine">
+						<a href = "https://www.speaknow.co/">
+							<img src ="assets/images/SpeakNow.jpg" class = "portfolio-img" alt="SpeakNow">
+							<span class="tooltip-minetext">Current consulting client: SpeakNow</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>	
 
-        <div class="gallery">
-        <div class="tooltip-mine">
-        <a href = "https://drive.google.com/file/d/1vnhxuUvKdz0sIHFRICV5P9VDhNcRoZfq/view?usp=sharing">
-        <img src="images/mw_research.jpg" class="image" alt="Cognitive Research">
-        <span class="tooltip-minetext">Cognitive Research on Mind Wandering</span></a>
-        </div>
-        <div class="desc">Cognitive sciences research on standardizing the measurement of mind-wandering, a crudely subjective state of mind. I executed this by writing more than a dozen of data processing scripts in MATLAB and Python to elucidate any correlation between mind wandering and reaction time, an objective form of measuring mind wandering</div></div>
-      </div>
+		<div class="header-center center" id="recommendation">
+			<h3 class="text-light-grey">Recommendations</h3>
+			<hr class="opacity push-left"/>
+			<p>Straight from my colleagues</p>
+		</div>
+	  	<div class = "content text-dark-white">
+			<div class="padding-rec about-sec">
+				<p>
+					<span class="large margin-right">Josh Lee</span> 
+					<span class="role-shift">Product Manager at SessionM</span>
+				</p>
+				<div class="paragraph-shift">
+					<p>"[I] have been extremely impressed with how he has been able to quickly develop an expertise in whatever field he decided to pursue... What's amazing about him is that he also has an exceptional motivation to seek impact, intellectual curiosity to pursue new path and sense of ownership to drive all his projects to success, despite whatever challenges may go his way." 
+					</p>
+				</div>
+			</div>
+		
+			<div class="padding-rec about-sec-alt">
+				<p>
+					<span class="large margin-right">Ari Manor</span> 
+					<span class="role-shift">CEO of CureFacts</span>
+				</p>
+				<div class="paragraph-shift">
+					<p>"[Out of the consulting teams from JHU, Duke, University of Michigan, etc, Barry's team produced] the most helpful slide-deck. [I] found very interesting and helpful insights." </p>
+				</div>
+			</div>
+			<div class="padding-rec about-sec-alt-b">
+				<p>
+					<span class="large margin-right">Isaac Herman</span>
+					<span class="right-align">Founder of Tufts TAMID Group</span>
+				</p>
+				<div class="paragraph-shift">
+					<p>"It’s rare that you come across a standout talent like Barry. I’ve had the opportunity to work with Barry for the past two years as part of the founding team behind the TAMID Group Chapter at Tufts University. He quickly rose to the rank of Director Education where he taught, inspired, and retained 30 new recruits for our growing organization, and is now serving as our Director of Consulting. I am consistently amazed at Barry’s flexibility and poise in new, demanding roles and his insatiable desire to constantly learn and improve. As a leader, Barry earns my highest recommendation."</p>
+				</div>
+			</div>
+			<div class="padding-rec about-sec-alt">
+				<p>
+					<span class="large margin-right">Joao Rodrigues</span>
+					<span class="role-shift">Postdoctoral Researcher at Harvard University</span>
+				</p>
+				<div class="paragraph-shift">
+					<p>"I noticed Barry's excitement about science, confident attitude and willingness to learn. Barry gathered an important set of preliminary evidences that support a new hypothesis that may help solving a long-pursued problem in our research group. I am glad I had the opportunity to meet and work with Barry."</p>
+				</div>
+			</div>
+			<div class="passing-rec about-sec">
+				<p>
+					<span class="large margin-right">Jim Brown</span>
+					<span class="role-shift">Lead Counselor at Belmont High School</span>
+				</p>
+				<div class="paragraph-shift">
+					<p>
+						<span class="font-size:12px">"Barry... has developed outstanding analytical and critical thinking skills [and] stays busy... I can't say enough about this considerate and optimistic young man."</span>
+					</p>
+				</div>
+			</div>
+		</div>
 
-      <div class="column-pics">
-        <div class="gallery">
-          <div class="tooltip-mine">
-            <a href = "https://www.speaknow.co/"><img src ="images/SpeakNow.jpg" class = "image" alt="SpeakNow">
-              <span class="tooltip-minetext">Current consulting client: SpeakNow</span></a>
-            </div>
-            <div class="desc">I am currently leading a team of consultants for our client, Speaknow, an online language learning platform based startup.</div></div>
-          </div>
-        </div>
-      
+		<!-- Contact Section -->
+		<div class="header-center center" id="contact">
+			<h3 class="text-light-grey">Contact Me</h3>
+			<hr class="opacity push-left"/>
+		</div>
+		<div class="padding-64 content text-grey">
+			<div class="section">
+				<p><i class="fa fa-map-marker fa-fw text-white xxlarge margin-right"></i> Greater Boston Area, MA, US</p>
+				<p><i class="fa fa-phone fa-fw text-white xxlarge margin-right"></i> Phone: 6one7 9three2 9eight7five</p>
+				<a href='mailto:READSUBJECTLINE@tufts.edu?subject=Hi%20there!%20Change%20address%20to%20b.eom%20:)'><p><i class="fa fa-envelope fa-fw text-white xxlarge margin-right"> </i> Email: b.eom[at]tufts.edu</p></a>
+			</div><br>
+			<!-- <p>Lets get in touch. Send me a message:</p>
 
-    <!-- End photo grid -->
-    </div></div></div>
-  <!-- End Portfolio Section -->
-  </div>
+			<form action="/action_page.php" target="_blank">
+			  <p><input class="w3-input padding-16" type="text" placeholder="Name" required name="Name"></p>
+			  <p><input class="w3-input padding-16" type="text" placeholder="Email" required name="Email"></p>
+			  <p><input class="w3-input padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+			  <p><input class="w3-input padding-16" type="text" placeholder="Message" required name="Message"></p>
+			  <p>
+				<button class="button w3-light-grey padding-large" type="submit">
+				  <i class="fa fa-paper-plane"></i> SEND MESSAGE
+				</button>
+			  </p>
+			</form> -->
+			
+		</div>
 
-  <div class = "content text-dark-white" id="recommendation">
-  <!-- Testimonials -->
-    <h3 class="padding-24 text-light-grey">Recommendations</h3>  
-    <hr style="width:200px" class="opacity push-left">
-    <div class="padding-rec"><p><span class="large margin-right">Josh Lee</span> <span class="role-shift">Product Manager at SessionM</span></p><div class="paragraph-shift"><p>"[I] have been extremely impressed with how he has been able to quickly develop an expertise in whatever field he decided to pursue... What's amazing about him is that he also has an exceptional motivation to seek impact, intellectual curiosity to pursue new path and sense of ownership to drive all his projects to success, despite whatever challenges may go his way." </p></div></div>
-    
-    <div class="padding-rec"><p><span class="large margin-right">Ari Manor</span> <span class="role-shift">CEO of CureFacts</span></p><div class="paragraph-shift"><p>"[Out of the consulting teams from JHU, Duke, University of Michigan, etc, Barry's team produced] the most helpful slide-deck. [I] found very interesting and helpful insights." </p></div></div>
-    <div class="padding-rec"><p><span class="large margin-right">Isaac Herman</span><span class="right-align">Founder of Tufts TAMID Group</span></p><div class="paragraph-shift"><p>"It’s rare that you come across a standout talent like Barry. I’ve had the opportunity to work with Barry for the past two years as part of the founding team behind the TAMID Group Chapter at Tufts University. He quickly rose to the rank of Director Education where he taught, inspired, and retained 30 new recruits for our growing organization, and is now serving as our Director of Consulting. I am consistently amazed at Barry’s flexibility and poise in new, demanding roles and his insatiable desire to constantly learn and improve. As a leader, Barry earns my highest recommendation."</p></div></div>
-    <div class="padding-rec"><p><span class="large margin-right">Joao Rodrigues</span><span class="role-shift">Postdoctoral Researcher at Harvard University</span></p><div class="paragraph-shift"><p>"I noticed Barry's excitement about science, confident attitude and willingness to learn. Barry gathered an important set of preliminary evidences that support a new hypothesis that may help solving a long-pursued problem in our research group. I am glad I had the opportunity to meet and work with Barry."</p></div></div>
-    <div class="passing-rec"><p><span class="large margin-right">Jim Brown</span><span class="role-shift">Lead Counselor at Belmont High School</span></p><div class="paragraph-shift"><p><span class="font-size:12px!important">"Barry... has developed outstanding analytical and critical thinking skills [and] stays busy... I can't say enough about this considerate and optimistic young man."</span></p></div></div>
-  </div>
-
-  <!-- Contact Section -->
-  <div class="padding-64 content text-grey" id="contact">
-    <h2 class="text-light-grey">Contact Me</h2>
-    <hr class="opacity push-left">
-
-    <div class="section">
-      <p><i class="fa fa-map-marker fa-fw text-white xxlarge margin-right"></i> Greater Boston Area, MA, US</p>
-      <p><i class="fa fa-phone fa-fw text-white xxlarge margin-right"></i> Phone: 6one7 9three2 9eight7five</p>
-      <a href='mailto:READSUBJECTLINE@tufts.edu?subject=Hi%20there!%20Change%20address%20to%20b.eom%20:)'><p><i class="fa fa-envelope fa-fw text-white xxlarge margin-right"> </i> Email: b.eom[at]tufts.edu</p></a>
-    </div><br>
-    <!-- <p>Lets get in touch. Send me a message:</p>
-
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input padding-16" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="button w3-light-grey padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form> -->
-  <!-- End Contact Section -->
-  </div>
-  
-    <!-- Footer -->
-  <footer class="content padding-32 text-grey xxlarge">
-<!--     <i class="fa fa-instagram hover-opacity"></i>
-    <i class="fa fa-snapchat hover-opacity"></i>
-    <i class="fa fa-pinterest-p hover-opacity"></i>
-    <i class="fa fa-twitter hover-opacity"></i> -->
-    <a href="https://www.linkedin.com/in/barry-eom-047732129/"><i class="fa fa-linkedin opacity"></i></a>
-    <a href="https://www.facebook.com/ermusk/"><i class="fa fa-facebook-official hover-opacity"></i></a>
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fa fa-youtube hover-opacity"></i></a>
-    
-  <!-- End footer -->
-  </footer>
-
-<!-- END PAGE CONTENT -->
-</div>
-
+		<footer class="content padding-32 text-grey xxlarge">
+			<a href="https://www.linkedin.com/in/barry-eom-047732129/"><i class="fa fa-linkedin opacity"></i></a>
+			<a href="https://www.facebook.com/ermusk/"><i class="fa fa-facebook-official hover-opacity"></i></a>
+			<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fa fa-youtube hover-opacity"></i></a>
+		</footer>
+	</div>
 </body>
 </html>
