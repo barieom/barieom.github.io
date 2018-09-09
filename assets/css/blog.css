@@ -22,3 +22,7 @@
 .comment-sec {
 	background-color: #333333;
 }
+
+.comment-sec>p {
+	font-size:1em;
+}
