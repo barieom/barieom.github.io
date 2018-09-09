@@ -1,0 +1,24 @@
+.blog-sec {
+	margin:1em;
+	padding:1em;
+	background-color:#444444;
+	border-radius:.5em;
+}
+
+.blog-title>h2 {
+	font-size: 3em;
+	font-weight: 650;
+}
+
+.blog-no-title>h5 {
+	font-size: 2em;
+	font-weight:600;
+}
+
+.light {
+	background-color: #303;
+}
+
+.comment-sec {
+	background-color: #333333;
+}
