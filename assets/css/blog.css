@@ -5,6 +5,10 @@
 	border-radius:.5em;
 }
 
+.blog-no-title {
+	
+}
+
 .blog-title>h2 {
 	font-size: 3em;
 	font-weight: 650;
@@ -13,6 +17,7 @@
 .blog-no-title>h5 {
 	font-size: 2em;
 	font-weight:600;
+
 }
 
 .light {
