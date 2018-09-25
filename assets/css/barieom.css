@@ -359,7 +359,7 @@ hr {
 .portfolio-img {
 	width:100em;
 	max-width:100%;
-	max-height:20em;
+	/*max-height:20em;*/
 }
 
 .portfolio-img-lg {
