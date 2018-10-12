@@ -129,12 +129,13 @@ body, h1,h2,h3,h4,h5,h6 {
 	}
 
 	.barrybackground {
-		left:-100em;
+		height: 45em; 
+	    width: 100%;
 	}
 
 	.image-overlay-center {
 		position: absolute;
-	    top: 59%;
+	    top: 49%;
 	    left: 66%;
 	    transform: translate(-50%, -50%);
 	}
