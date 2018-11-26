@@ -126,7 +126,9 @@
 			display: inline;
 			background-color: #000;
 		}*/
-
+	.noshow {
+		display:none;
+	}
 
 /*tool tip*/
 /*.tooltip {
