@@ -42,13 +42,19 @@ body, h1,h2,h3,h4,h5,h6 {
 }
 
 .barrybackground {
-    background-image: url("../images/airportcasual_trim.jpg");
-    /*background-image: url("../images/glass-adj.jpg");*/
     height: 55em; 
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.text-image {
+    background-image: url("../images/airportcasual_name.jpg");
+}
+
+.no-text-image {
+    background-image: url("../images/airportcasual_trim.jpg");
 }
 
 .image-overlay-center {
@@ -122,6 +128,10 @@ body, h1,h2,h3,h4,h5,h6 {
 }
 
 @media (max-width:600px) {
+	.text-image {
+		display: none;
+	}
+
 	.content {
 		padding-right:1em;
 		padding-left:1em;
@@ -135,7 +145,7 @@ body, h1,h2,h3,h4,h5,h6 {
 
 	.image-overlay-center {
 		position: absolute;
-	    top: 55%;
+	    top: 45%;
 	    left: 66%;
 	    transform: translate(-50%, -50%);
 	}
@@ -151,6 +161,14 @@ body, h1,h2,h3,h4,h5,h6 {
 }
 
 @media (min-width:601px) {
+	.no-text-image {
+		display: none;
+	}
+
+	.image-overlay-center {
+		display: none;
+	}
+
 	.content {
 		padding-right:25%;
 		padding-left:25%;
