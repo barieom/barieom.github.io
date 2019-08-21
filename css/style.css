@@ -240,19 +240,20 @@ nav ul li a {
 /*-----------------------------------------------------------------------------------*/
 
 #header {
-  background: url("../images/home-bg.jpg") repeat scroll center center / cover;
+  background: url("../images/me_color.jpg") repeat scroll center center / cover;
   height: 100vh;
   width: 100%;
 }
 
 
 #header .header-content {
-  height: 100vh;
+  height: 170vh;
   text-align: left;
   width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin-left: 20px;
 }
 
 .header-content h1 {
