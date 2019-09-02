@@ -464,11 +464,12 @@ nav ul li a {
 /* PORTPORT
 */
 
-#portfolio-desc {
+.portfolio-desc {
   background: white;
   padding: 20px 30px;
   text-align: left;
-  max-width: 400px;
+  max-width: 700px;
+  /*width: 0em!important;*/
   margin: 40px auto;
   position: relative;
 }
@@ -478,14 +479,6 @@ nav ul li a {
  * Fade-zoom animation for first dialog
  */
 
- .portfolio-desc {
-  background: white;
-  padding: 20px 30px;
-  text-align: left;
-  max-width: 400px;
-  margin: 40px auto;
-  position: relative;
-}
 
 /* start state */
 .my-mfp-zoom-in .zoom-anim-dialog {
