@@ -79,7 +79,7 @@ $(document).ready(function() {
 
   $(function() {
     typed.typed({
-      strings: ["Barry Eom.", "a Product Manager.", "a Leader.", "an Absurdist."],
+      strings: ["Barry Eom.", "a Problem Solver", "a Product Manager.", "a Leader.", "an Absurdist."],
       typeSpeed: 100,
       loop: true,
     });
