@@ -2,13 +2,14 @@ jQuery(document).ready(function($) {
   "use strict";
 
   //Contact
-  $('form.contactForm').submit(function() {
+  $('form.php-email-form').submit(function() {
+   
     var f = $(this).find('.form-group'),
       ferror = false,
       emailExp = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
 
     f.children('input').each(function() { // run all inputs
-
+     
       var i = $(this); // current input
       var rule = i.attr('data-rule');
 
@@ -54,7 +55,7 @@ jQuery(document).ready(function($) {
             }
             break;
         }
-        i.next('.validation').html((ierror ? (i.attr('data-msg') !== undefined ? i.attr('data-msg') : 'wrong Input') : '')).show('blind');
+        i.next('.validate').html((ierror ? (i.attr('data-msg') !== undefined ? i.attr('data-msg') : 'wrong Input') : '')).show('blind');
       }
     });
     f.children('textarea').each(function() { // run all inputs
@@ -85,31 +86,38 @@ jQuery(document).ready(function($) {
             }
             break;
         }
-        i.next('.validation').html((ierror ? (i.attr('data-msg') != undefined ? i.attr('data-msg') : 'wrong Input') : '')).show('blind');
+        i.next('.validate').html((ierror ? (i.attr('data-msg') != undefined ? i.attr('data-msg') : 'wrong Input') : '')).show('blind');
       }
     });
     if (ferror) return false;
     else var str = $(this).serialize();
+
+    var this_form = $(this);
     var action = $(this).attr('action');
+
     if( ! action ) {
-      action = 'contactform/contactform.php';
+      this_form.find('.loading').slideUp();
+      this_form.find('.error-message').slideDown().html('The form action property is not set!');
+      return false;
     }
+    
+    this_form.find('.sent-message').slideUp();
+    this_form.find('.error-message').slideUp();
+    this_form.find('.loading').slideDown();
+    
     $.ajax({
       type: "POST",
       url: action,
       data: str,
       success: function(msg) {
-        // alert(msg);
         if (msg == 'OK') {
-          $("#sendmessage").addClass("show");
-          $("#errormessage").removeClass("show");
-          $('.contactForm').find("input, textarea").val("");
+          this_form.find('.loading').slideUp();
+          this_form.find('.sent-message').slideDown();
+          this_form.find("input:not(input[type=submit]), textarea").val('');
         } else {
-          $("#sendmessage").removeClass("show");
-          $("#errormessage").addClass("show");
-          $('#errormessage').html(msg);
+          this_form.find('.loading').slideUp();
+          this_form.find('.error-message').slideDown().html(msg);
         }
-
       }
     });
     return false;
