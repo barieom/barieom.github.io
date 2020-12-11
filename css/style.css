@@ -318,6 +318,7 @@ nav ul li a {
   font-size: 28px;
   text-align: left;
   margin-bottom:10px!important;
+  line-height: 1.2em;
 }
 
 .p-subheading {
@@ -330,13 +331,11 @@ nav ul li a {
 
 .p-heading em {
   font-family: 'Montserrat', sans-serif!important;
-  font-size: 15px!important;
   font-weight: 300!important;
   font-style: normal!important;
-  padding-left:1em;
   font-style: normal!important;
   margin:0;
-  line-height: 1.75em;
+  color: #b8a07e;
 }
 
 .p-list {
@@ -499,6 +498,10 @@ nav ul li a {
   position: relative;
 }
 
+.text-highlight {
+  color: #b8a07e;
+  font-size: 28px;
+}
 
 /**
  * Fade-zoom animation for first dialog
