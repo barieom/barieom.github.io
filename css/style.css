@@ -151,8 +151,8 @@ p {
 }
 
 .paddsection {
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 5em;
+  padding-bottom: 5em;
 }
 
 .paddsections {
@@ -318,7 +318,8 @@ nav ul li a {
   font-size: 28px;
   text-align: left;
   margin-bottom:10px!important;
-  line-height: 1.2em;
+  padding-bottom:1em;
+  line-height: 1.5em;
 }
 
 .p-subheading {
@@ -481,7 +482,9 @@ nav ul li a {
 }
 
 .portfolio-thumbnail img {
-  max-width: 100%;
+   max-width: 100%;
+   max-height: ;
+   border: 1px solid #b8a07e;
 }
 
 /*------------
