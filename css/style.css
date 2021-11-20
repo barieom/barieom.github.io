@@ -296,6 +296,10 @@ nav ul li a {
 /*  Aout-us
 /*-----------------------------------------------------------------------------------*/
 
+.h2-color { 
+  color: #b8a07e
+ }
+
 #about {
   width: 100%;
   height: auto;
@@ -364,6 +368,10 @@ nav ul li a {
 /*-----------------------------------------------------------------------------------*/
 /*   Services
 /*-----------------------------------------------------------------------------------*/
+
+.title-padding {
+  padding: 2em;
+}
 
 #services {
   background: #f7f7f7;
@@ -703,7 +711,7 @@ nav ul li a {
 #contact {
   height: auto;
   width: 100%;
-  background: #f7f7f7;
+  background: #ffffff;
   padding-bottom: 10em;
 }
 
