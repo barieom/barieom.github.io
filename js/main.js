@@ -79,7 +79,7 @@ $(document).ready(function() {
 
   $(function() {
     typed.typed({
-      strings: ["'m Barry Eom.", " get sh*t done.", " believe in Humane Technology.", " move fast, but don't break things",],
+      strings: ["'m Barry Eom.", " love asking questions", " love humane technology", " move fast... but not at the expense of breaking things", " love lifting others up"],
       typeSpeed: 100,
       loop: true,
     });
